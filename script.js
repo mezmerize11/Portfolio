@@ -28,8 +28,7 @@ const typingText = document.getElementById("typing-text");
 const words = [
     "Technical Support",
     "Customer Experience",
-    "Training",
-    "Problem Solver"
+    "Training"
 ];
 
 let wordIndex = 0;

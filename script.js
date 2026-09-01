@@ -99,7 +99,7 @@ const observer = new IntersectionObserver(
 
             if (entry.isIntersecting) {
 
-                progressBar.style.width = "75%";
+                progressBar.style.width = "46%";
 
             }
 

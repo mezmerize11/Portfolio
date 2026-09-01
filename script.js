@@ -80,3 +80,36 @@ function typeEffect() {
 }
 
 typeEffect();
+
+// =========================
+// DEVELOPMENT PROGRESS
+// =========================
+
+const developmentSection =
+    document.querySelector(".development-section");
+
+const progressBar =
+    document.getElementById("progress-bar");
+
+
+const observer = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+                progressBar.style.width = "75%";
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.4
+    }
+);
+
+
+observer.observe(developmentSection);
